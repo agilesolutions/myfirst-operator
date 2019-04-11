@@ -73,7 +73,7 @@ kind: PodSet
 metadata:
   name: example-podset
 spec:
-  replicas: 3" | oc create -f -
+  replicas: 3" | kubectl create -f -
 - kubectl get pods -l app=example-podset
 - kubectl delete pod xxx
 - kubectl get pods -l app=example-podset
@@ -82,7 +82,7 @@ kind: PodSet
 metadata:
   name: example-podset
 spec:
-  replicas: 2" | oc apply -f -
+  replicas: 2" | kubectl apply -f -
 - kubectl get pods -l app=example-podset
 - kubectl describe podset/example-podset
 - kubectl delete podset example-podset
