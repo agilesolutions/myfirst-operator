@@ -26,3 +26,5 @@ log on to https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster
 - operator-sdk add api --api-version=app.example.com/v1alpha1 --kind=PodSet
 ## Add a new controller that watches for PodSet
 - operator-sdk add controller --api-version=app.example.com/v1alpha1 --kind=PodSet
+## more reading on this
+[writing operators](https://medium.com/devopslinks/writing-your-first-kubernetes-operator-8f3df4453234)
