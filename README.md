@@ -9,7 +9,7 @@ log on to https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster
 - export GOBIN=/usr/local/go/bin
 - go env GOPATH
 ## install dep
-- rl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+- curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 ## install sdk
 - mkdir -p $GOPATH/src/github.com/operator-framework
 - cd $GOPATH/src/github.com/operator-framework
