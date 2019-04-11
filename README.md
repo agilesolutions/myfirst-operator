@@ -68,21 +68,11 @@ log on to https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster
 - kubectl get podsets.app.example.com
 
 ## create our PodSet resource configured with 3 replicas
-- echo "apiVersion: app.example.com/v1alpha1
-kind: PodSet
-metadata:
-  name: example-podset
-spec:
-  replicas: 3" | kubectl create -f -
+- kubectl apply -f examples/replicas2.yaml
 - kubectl get pods -l app=example-podset
 - kubectl delete pod xxx
 - kubectl get pods -l app=example-podset
-- echo "apiVersion: app.example.com/v1alpha1
-kind: PodSet
-metadata:
-  name: example-podset
-spec:
-  replicas: 2" | kubectl apply -f -
+- kubectl apply -f examples/replicas2.yaml
 - kubectl get pods -l app=example-podset
 - kubectl describe podset/example-podset
 - kubectl delete podset example-podset
