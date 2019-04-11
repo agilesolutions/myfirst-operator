@@ -37,6 +37,13 @@ log on to https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster
 - docker login -u agilesolutions
 - docker push agilesolutions/podset-operator
 
+# to run this stuff
+- log on to https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster
+- start scenario
+- minikube start
+- git clone https://github.com/agilesolutions/podset-operator.git
+- cd podset-operator
+
 ## Setup Service Account
 - kubectl create -f deploy/service_account.yaml
 
