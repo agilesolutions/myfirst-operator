@@ -67,8 +67,8 @@ log on to https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster
 ## check if there's a CR using the CRD fullname...
 - kubectl get podsets.app.example.com
 
-## create our PodSet resource configured with 3 replicas
-- kubectl apply -f examples/replicas2.yaml
+## create our PodSet resource configured with 4 replicas
+- kubectl apply -f examples/replicas4.yaml
 - kubectl get pods -l app=example-podset
 - kubectl delete pod xxx
 - kubectl get pods -l app=example-podset
