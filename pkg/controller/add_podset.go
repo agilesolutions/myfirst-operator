@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/operator-framework/operator-sdk/podset-operator/pkg/controller/podset"
+	"github.com/xcoulon/podset-operator/pkg/controller/podset"
 )
 
 func init() {

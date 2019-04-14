@@ -1,5 +1,5 @@
 # how this project was created
-log on to https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster
+log on to [katacoda k8s course site](https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster) or [https://labs.play-with-k8s.com](https://labs.play-with-k8s.com/)
 ## install go
 - curl -LO https://dl.google.com/go/go1.12.3.linux-amd64.tar.gz
 - tar -C /usr/local -xzf go1.12.3.linux-amd64.tar.gz
