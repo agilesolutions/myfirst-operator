@@ -7,6 +7,7 @@ log on to [katacoda k8s course site](https://www.katacoda.com/courses/kubernetes
 - mkdir /root/go
 - export GOPATH=/root/go
 - export GOBIN=/usr/local/go/bin
+- export PATH=$PATH:$(go env GOPATH)/bin
 - go env GOPATH
 - read [How to write GO code](https://golang.org/doc/code.html)
 
