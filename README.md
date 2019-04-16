@@ -8,6 +8,7 @@ log on to [katacoda k8s course site](https://www.katacoda.com/courses/kubernetes
 - export GOPATH=/root/go
 - export GOBIN=/usr/local/go/bin
 - go env GOPATH
+- read [How to write GO code](https://golang.org/doc/code.html)
 
 ## install dep
 - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
