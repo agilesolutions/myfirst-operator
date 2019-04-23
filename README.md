@@ -1,4 +1,10 @@
-# how this project was created
+# about Centos k8s controllers
+CRDs are only a mean to specify a configuration, though. The cluster still needs controllers to monitor its state and reconcile the resource 
+to match with the configuration (make consistent with another).Operators are controllers working in association with custom resources to perform tasks that generally… “human operators” have to take care of. Operators are the CRDs associated with controllers which observe and act upon changes in the configuration or changes in the state of the cluster
+The etcd operator manages etcd clusters deployed to Kubernetes and automates tasks related to operating an etcd cluster.
+
+
+## how this project was created
 log on to [katacoda k8s course site](https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster)
 ## install go
 - curl -LO https://dl.google.com/go/go1.12.3.linux-amd64.tar.gz
@@ -43,8 +49,11 @@ log on to [katacoda k8s course site](https://www.katacoda.com/courses/kubernetes
 - log on to https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster
 - start scenario
 - minikube start
+- mkdir -p $GOPATH/src/github.com/agilesolutions
+- cd $GOPATH/src/github.com/agilesolutions
 - git clone https://github.com/agilesolutions/podset-operator.git
 - cd podset-operator
+- go install & build
 
 ## Setup Service Account
 - kubectl create -f deploy/service_account.yaml
