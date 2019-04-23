@@ -85,7 +85,7 @@ log on to [katacoda k8s course site](https://www.katacoda.com/courses/kubernetes
 ## create our PodSet resource configured with 4 replicas
 - kubectl apply -f examples/replicas4.yaml
 - kubectl get pods -l app=example-podset
-- kubectl delete pod xxx
+- kubectl delete pods -l app=example-podset
 - kubectl get pods -l app=example-podset
 - kubectl apply -f examples/replicas2.yaml
 - kubectl get pods -l app=example-podset
