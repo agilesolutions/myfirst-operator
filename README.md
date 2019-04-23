@@ -32,8 +32,8 @@ log on to [katacoda k8s course site](https://www.katacoda.com/courses/kubernetes
 ## Bootstrapping the Go project
 - git config --global user.email robert.rong@agile-solutions.ch
 - git config --global user.name agilesolutions
-- mkdir -p $GOPATH/src/github.com/podset-operator/
-- cd $GOPATH/src/github.com/podset-operator/
+- mkdir -p $GOPATH/src/github.com/agilesolutions/
+- cd $GOPATH/src/github.com/agilesolutions/
 - operator-sdk new podset-operator
 - tree -I vendor
 
