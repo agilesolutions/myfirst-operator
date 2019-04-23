@@ -21,8 +21,6 @@ log on to [katacoda k8s course site](https://www.katacoda.com/courses/kubernetes
 - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
 ## install sdk
-- git config --global user.email robert.rong@agile-solutions.ch
-- git config --global user.name agilesolutions
 - mkdir -p $GOPATH/src/github.com/operator-framework
 - cd $GOPATH/src/github.com/operator-framework
 - git clone https://github.com/operator-framework/operator-sdk
@@ -32,6 +30,8 @@ log on to [katacoda k8s course site](https://www.katacoda.com/courses/kubernetes
 - make install
 
 ## Bootstrapping the Go project
+- git config --global user.email robert.rong@agile-solutions.ch
+- git config --global user.name agilesolutions
 - mkdir -p $GOPATH/src/github.com/podset-operator/
 - cd $GOPATH/src/github.com/podset-operator/
 - operator-sdk new podset-operator
