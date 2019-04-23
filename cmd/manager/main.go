@@ -7,12 +7,6 @@ import (
 	"os"
 	"runtime"
 
-	// Import all Kubernetes client auth plugins (e.g. Azure, GCP, OIDC, etc.)
-	_ "k8s.io/client-go/plugin/pkg/client/auth"
-
-	"github.com/operator-framework/operator-sdk/podset-operator/pkg/apis"
-	"github.com/operator-framework/operator-sdk/podset-operator/pkg/controller"
-
 	"github.com/operator-framework/operator-sdk/pkg/k8sutil"
 	"github.com/operator-framework/operator-sdk/pkg/leader"
 	"github.com/operator-framework/operator-sdk/pkg/log/zap"
