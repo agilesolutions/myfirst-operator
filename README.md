@@ -30,6 +30,8 @@ log on to [katacoda k8s course site](https://www.katacoda.com/courses/kubernetes
 - make install
 
 ## Bootstrapping the Go project
+- mkdir -p $GOPATH/src/github.com/podset-operator/
+- cd $GOPATH/src/github.com/podset-operator/
 - operator-sdk new podset-operator
 - tree -I vendor
 
