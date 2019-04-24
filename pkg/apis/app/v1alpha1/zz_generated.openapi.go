@@ -13,9 +13,9 @@ import (
 
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
-		"github.com/operator-framework/operator-sdk/podset-operator/pkg/apis/app/v1alpha1.PodSet":       schema_pkg_apis_app_v1alpha1_PodSet(ref),
-		"github.com/operator-framework/operator-sdk/podset-operator/pkg/apis/app/v1alpha1.PodSetSpec":   schema_pkg_apis_app_v1alpha1_PodSetSpec(ref),
-		"github.com/operator-framework/operator-sdk/podset-operator/pkg/apis/app/v1alpha1.PodSetStatus": schema_pkg_apis_app_v1alpha1_PodSetStatus(ref),
+		"github.com/agilesolutions/podset-operator/pkg/apis/app/v1alpha1.PodSet":       schema_pkg_apis_app_v1alpha1_PodSet(ref),
+		"github.com/agilesolutions/podset-operator/pkg/apis/app/v1alpha1.PodSetSpec":   schema_pkg_apis_app_v1alpha1_PodSetSpec(ref),
+		"github.com/agilesolutions/podset-operator/pkg/apis/app/v1alpha1.PodSetStatus": schema_pkg_apis_app_v1alpha1_PodSetStatus(ref),
 	}
 }
 
@@ -46,19 +46,19 @@ func schema_pkg_apis_app_v1alpha1_PodSet(ref common.ReferenceCallback) common.Op
 					},
 					"spec": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/operator-framework/operator-sdk/podset-operator/pkg/apis/app/v1alpha1.PodSetSpec"),
+							Ref: ref("github.com/agilesolutions/podset-operator/pkg/apis/app/v1alpha1.PodSetSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/operator-framework/operator-sdk/podset-operator/pkg/apis/app/v1alpha1.PodSetStatus"),
+							Ref: ref("github.com/agilesolutions/podset-operator/pkg/apis/app/v1alpha1.PodSetStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/operator-framework/operator-sdk/podset-operator/pkg/apis/app/v1alpha1.PodSetSpec", "github.com/operator-framework/operator-sdk/podset-operator/pkg/apis/app/v1alpha1.PodSetStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/agilesolutions/podset-operator/pkg/apis/app/v1alpha1.PodSetSpec", "github.com/agilesolutions/podset-operator/pkg/apis/app/v1alpha1.PodSetStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 

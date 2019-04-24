@@ -16,7 +16,7 @@ spec:
       containers:
         - name: podset-operator
           # Replace this with the built image name
-          image: agilesolutions/podset-operator
+          image: agilesolutions/podset-operator 
           command:
           - podset-operator
           imagePullPolicy: Always

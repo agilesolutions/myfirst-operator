@@ -2,7 +2,7 @@ package podset
 
 import (
 	"context"
-	"reflect"
+        "reflect"
 
 	appv1alpha1 "github.com/agilesolutions/podset-operator/pkg/apis/app/v1alpha1"
 
@@ -20,7 +20,6 @@ import (
 	logf "sigs.k8s.io/controller-runtime/pkg/runtime/log"
 	"sigs.k8s.io/controller-runtime/pkg/source"
 )
-
 var log = logf.Log.WithName("controller_podset")
 
 /**

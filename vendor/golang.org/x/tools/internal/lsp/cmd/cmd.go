@@ -145,14 +145,14 @@ func (app *Application) connect(ctx context.Context, client cmdClient) (protocol
 		stream := jsonrpc2.NewHeaderStream(conn, conn)
 		var jc *jsonrpc2.Conn
 		jc, server, _ = protocol.NewClient(stream, client)
-		if err != nil {
-			return nil, err
-		}
 		go jc.Run(ctx)
 	}
+
 	params := &protocol.InitializeParams{}
 	params.RootURI = string(span.FileURI(app.Config.Dir))
 	params.Capabilities.Workspace.Configuration = true
+	params.Capabilities.TextDocument.Hover.ContentFormat = []protocol.MarkupKind{protocol.PlainText}
+
 	client.prepare(app, server)
 	if _, err := server.Initialize(ctx, params); err != nil {
 		return nil, err

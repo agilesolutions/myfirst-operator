@@ -8,11 +8,13 @@ import (
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
 
 // PodSetSpec defines the desired state of PodSet
+// +k8s:openapi-gen=true
 type PodSetSpec struct {
 	Replicas int32 `json:"replicas"`
 }
 
 // PodSetStatus defines the observed state of PodSet
+// +k8s:openapi-gen=true
 type PodSetStatus struct {
 	PodNames []string `json:"podNames"`
 }

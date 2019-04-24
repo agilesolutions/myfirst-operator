@@ -1,6 +1,5 @@
 package main
 
-
 import (
 	"context"
 	"flag"
@@ -8,13 +7,18 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/operator-framework/operator-sdk/pkg/k8sutil"
-	"github.com/operator-framework/operator-sdk/pkg/leader"
-	"github.com/operator-framework/operator-sdk/pkg/ready"
-	sdkVersion "github.com/operator-framework/operator-sdk/version"
+	// Import all Kubernetes client auth plugins (e.g. Azure, GCP, OIDC, etc.)
+	_ "k8s.io/client-go/plugin/pkg/client/auth"
+
 	"github.com/agilesolutions/podset-operator/pkg/apis"
 	"github.com/agilesolutions/podset-operator/pkg/controller"
-	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
+
+	"github.com/operator-framework/operator-sdk/pkg/k8sutil"
+	"github.com/operator-framework/operator-sdk/pkg/leader"
+	"github.com/operator-framework/operator-sdk/pkg/log/zap"
+	"github.com/operator-framework/operator-sdk/pkg/metrics"
+	sdkVersion "github.com/operator-framework/operator-sdk/version"
+	"github.com/spf13/pflag"
 	"sigs.k8s.io/controller-runtime/pkg/client/config"
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 	logf "sigs.k8s.io/controller-runtime/pkg/runtime/log"
