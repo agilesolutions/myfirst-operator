@@ -120,3 +120,4 @@ log on to [katacoda k8s course site](https://www.katacoda.com/courses/kubernetes
 - kubectl scale --replicas=3 deployment http
 - kubectl create -f deployment.yaml
 - kubectl get deployment
+- [Get a Shell to a Running Container](https://kubernetes.io/docs/tasks/debug-application-cluster/get-shell-running-container/)
