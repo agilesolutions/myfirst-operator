@@ -96,4 +96,27 @@ log on to [katacoda k8s course site](https://www.katacoda.com/courses/kubernetes
 ## more reading on this
 [writing operators](https://medium.com/devopslinks/writing-your-first-kubernetes-operator-8f3df4453234)
 
-
+## relevant KUBECTL commands
+- kubectl cluster-info
+- kubectl get nodes
+- kubectl config set-context $(kubectl config current-context) --namespace=default
+- kubectl config view | grep namespace:
+- kubectl get nodes
+- kubectl get po
+- kubectl get pods --all-namespaces
+- kubectl get pods -n default
+- kubectl get namespaces
+- kubectl get svc
+- kubectl get pods -o wide
+- kubectl get -f pod.yaml -o json
+- kubectl get rc,services
+- kubectl run first-deployment --image=katacoda/docker-http-server --port=80 --replicas=1
+- kubectl expose deployment first-deployment --port=80 --type=NodePort
+- export PORT=$(kubectl get svc first-deployment -o go-template='{{range.spec.ports}}{{if .nodePort}}{{.nodePort}}{{"\n"}}{{end}}{{end}}')
+- kubectl apply -f /opt/kubernetes-dashboard.yaml
+- kubectl get deployments
+- kubectl describe deployment http
+- kubectl run httpexposed --image=katacoda/docker-http-server:latest --replicas=1 --port=80 --hostport=8001
+- kubectl scale --replicas=3 deployment http
+- kubectl create -f deployment.yaml
+- kubectl get deployment
