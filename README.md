@@ -121,3 +121,4 @@ log on to [katacoda k8s course site](https://www.katacoda.com/courses/kubernetes
 - kubectl create -f deployment.yaml
 - kubectl get deployment
 - [Get a Shell to a Running Container](https://kubernetes.io/docs/tasks/debug-application-cluster/get-shell-running-container/)
+- [Istio traffic management](https://istio.io/docs/tasks/traffic-management/)
