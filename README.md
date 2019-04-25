@@ -102,11 +102,12 @@ log on to [katacoda k8s course site](https://www.katacoda.com/courses/kubernetes
 - kubectl config set-context $(kubectl config current-context) --namespace=default
 - kubectl config view | grep namespace:
 - kubectl get nodes
-- kubectl get po
+- kubectl get deployment componenta -o=custom-columns=:.metadata.annotations.contact --no-headers- kubectl get pods -l app=sa-log --show-labels
 - kubectl get pods --all-namespaces
 - kubectl get pods -n default
 - kubectl get namespaces
-- kubectl get svc
+- kubectl get svc -n istio-system -l istio=ingressgateway
+- kubectl get svc -n istio-system -l istio=ingressgateway -o jsonpath='{.items[0].status.loadBalancer.ingress[0].ip}')
 - kubectl get pods -o wide
 - kubectl get -f pod.yaml -o json
 - kubectl get rc,services
